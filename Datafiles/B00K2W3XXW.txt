@@ -1,0 +1,2 @@
+Time: ISBN: Retail-Price: Lowest-New-Price: Lowest-Used-Price: Sales-Rank
+2017/01/18:12:47:09 B00K2W3XXW 2095 2095 0 505784

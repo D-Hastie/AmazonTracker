@@ -1,0 +1,10 @@
+*.pyc
+*ids.py
+*.swp
+*mailconf.py
+ProductData.txt
+isbns.txt
+isbns.hold
+amznids.txt
+MailAttach/*
+directories.py

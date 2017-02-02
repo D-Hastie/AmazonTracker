@@ -1,0 +1,3 @@
+Time: ISBN: Retail-Price: Lowest-New-Price: Lowest-Used-Price: Sales-Rank
+2017/01/18:12:45:12 B004A8VRR8 2050 2050 0 15287
+2017/01/18:12:46:18 B004A8VRR8 2050 2050 0 15287

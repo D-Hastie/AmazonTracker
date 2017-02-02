@@ -1,0 +1,3 @@
+Time: ISBN: Retail-Price: Lowest-New-Price: Lowest-Used-Price: Sales-Rank
+2017/01/18:12:45:30 B000FLG8XC 2660 2542 0 1248
+2017/01/18:12:46:37 B000FLG8XC 2660 2542 0 1248
