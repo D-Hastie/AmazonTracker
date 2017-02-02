@@ -1,3 +1,0 @@
-Time: ISBN: Retail-Price: Lowest-New-Price: Lowest-Used-Price: Sales-Rank
-2017/01/18:12:45:39 B004809ITC 2599 1990 0 1769
-2017/01/18:12:46:45 B004809ITC 2599 1990 0 1769

@@ -1,2 +1,0 @@
-Time: ISBN: Retail-Price: Lowest-New-Price: Lowest-Used-Price: Sales-Rank
-2016/03/05:12:21:21 1292024208 0 3010 13470 98148

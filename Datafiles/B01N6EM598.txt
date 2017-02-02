@@ -1,2 +1,0 @@
-Time: ISBN: Retail-Price: Lowest-New-Price: Lowest-Used-Price: Sales-Rank
-2017/01/18:12:46:57 B01N6EM598 2095 2095 0 562821

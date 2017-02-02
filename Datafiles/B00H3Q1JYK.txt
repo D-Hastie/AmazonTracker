@@ -1,3 +1,0 @@
-Time: ISBN: Retail-Price: Lowest-New-Price: Lowest-Used-Price: Sales-Rank
-2017/01/18:12:45:32 B00H3Q1JYK 2631 2088 0 57112
-2017/01/18:12:46:39 B00H3Q1JYK 2631 2088 0 57112

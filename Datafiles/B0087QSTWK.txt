@@ -1,3 +1,0 @@
-Time: ISBN: Retail-Price: Lowest-New-Price: Lowest-Used-Price: Sales-Rank
-2017/01/18:12:45:44 B0087QSTWK 2339 1800 0 63015
-2017/01/18:12:46:50 B0087QSTWK 2339 1800 0 63015
