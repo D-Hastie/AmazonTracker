@@ -2,7 +2,8 @@
 *ids.py
 *.swp
 *mailconf.py
-Main/Datafiles/*
+Datafiles/*
+Datafiles
 isbns.txt
 isbns.hold
 amznids.txt

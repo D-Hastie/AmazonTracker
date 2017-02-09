@@ -3,6 +3,8 @@ import sys
 import directories
 trackerdirectory = directories.trackerdir
 sys.path.insert(0, '%s' % trackerdirectory)
+
+from urllib2 import HTTPError
 import ids
 import csv
 import bottlenose as BN
@@ -24,12 +26,12 @@ amazon = BN.Amazon(ids.AWSKEY,ids.AWSSECRET,ids.AWSID,Region='UK', MaxQPS=0.8, E
 
 i = 0
 ##starttime = time.time()
-isbns = open('isbns.txt', 'r')
+isbns = open(directories.isbnlistdir, 'r')
 print "Number", "ISBN:","Retail:","New Price:","Used Price:", "Sales Rank:"
 for line in isbns:
     isbnclean = line.strip()
-    print isbnclean
-    print type(isbnclean)
+#    print isbnclean
+#    print type(isbnclean)
     response = amazon.ItemLookup(ItemId=isbnclean, ResponseGroup="Large")
     soup = BeautifulSoup(response, "xml")
     
