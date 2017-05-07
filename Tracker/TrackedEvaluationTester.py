@@ -98,6 +98,11 @@ while j < 1:
         # print item_rolling_median
         # # print median_price
         
+        close()
+        
+        VariableFee = 0.15* median_lowest_price
+        TotalFee = FlatFees+VariableFee
+        PotentialEarning = minPrice - TotalFee - DeliveryCost + FlatPay - FoundCost[j]
         
         
 # while j < len(pddata):

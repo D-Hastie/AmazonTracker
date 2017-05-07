@@ -20,9 +20,10 @@ AmRetail = pddata['AmRetail']
 AmRank = pddata['AmRank']
 # print AmRank, 'Rank Data'
 
+print AmRank
 
-
-while j < len(pddata):
+# while j < len(pddata):
+while j < 2:
     # print ' '
     # print j, ' ', isbn[j], ' ', FoundPrice[j], ' ', AmUsed[j], ' ', AmNew[j], ' ', AmRetail[j], ' ', AmRank[j]
     # print type(j), ' ', type(isbn[j]), ' ', type(FoundPrice[j]), ' ', type(AmUsed[j]), ' ', type(AmNew[j]), ' ', type(AmRetail[j]), ' ', type(AmRank[j])

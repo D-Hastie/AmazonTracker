@@ -14,7 +14,7 @@ import os
 from bs4 import BeautifulSoup
 import numpy
 import time
-import Gnuplot
+import random
 
 def error_handler(err):
     ex = err['exception']
@@ -58,7 +58,7 @@ for line in isbns:
         salesrank=0
 
     
-    time = datetime.datetime.now().strftime("%Y/%m/%d:%H:%M:%S")
+    CallTime = datetime.datetime.now().strftime("%Y/%m/%d:%H:%M:%S")
     outfile = open(directories.datafiledir+'%s.txt' % itmisbn, 'a')
     AmznIds = open('amznids.txt', 'a')
     if os.stat(directories.datafiledir+'%s.txt' % itmisbn).st_size==0:
@@ -74,7 +74,7 @@ for line in isbns:
     AmznIds.close()
     
     i = i + 1
-    print i, time, itmisbn, retailprice, newprice, usedprice, salesrank
+    print i, CallTime, itmisbn, retailprice, newprice, usedprice, salesrank
 
 ##endtime = time.time()
 ##progtime =endtime-starttime

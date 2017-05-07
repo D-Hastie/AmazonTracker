@@ -9,6 +9,7 @@ import MailImport
 import ids
 from bs4 import BeautifulSoup
 import bottlenose as BN
+from urllib2 import HTTPError
 
 def error_handler(err):
     ex = err['exception']
@@ -28,7 +29,7 @@ j = 0
 FoundProductData = open('ProductData.txt', 'w')
 FoundProductData.write('{0} {1} {2} {3} {4} {5} {6} \n'.format('Number', 'ISBN', 'FoundCost', 'AmUsed','AmNew', 'AmRetail', 'AmRank'))
 
-FileChoose = 3
+FileChoose = 1 
 if FileChoose == 1:
 	filepath = MailImport.file_path
 else:
