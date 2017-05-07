@@ -14,13 +14,18 @@ import os
 from bs4 import BeautifulSoup
 import numpy
 import time
+<<<<<<< HEAD
+=======
+import Gnuplot
+>>>>>>> 2c527055ba7c462797315a4be430acd073349dce
 import random
 
 def error_handler(err):
     ex = err['exception']
     if isinstance(ex, HTTPError) and ex.code == 503:
-        time.sleep(random.expovariate(0.1))
+        time.sleep(5)
         return True
+
 
 amazon = BN.Amazon(ids.AWSKEY,ids.AWSSECRET,ids.AWSID,Region='UK', MaxQPS=0.8, ErrorHandler=error_handler)
 
@@ -29,6 +34,8 @@ i = 0
 isbns = open(directories.isbnlistdir, 'r')
 print "Number", "ISBN:","Retail:","New Price:","Used Price:", "Sales Rank:"
 for line in isbns:
+    print  time
+
     isbnclean = line.strip()
 #    print isbnclean
 #    print type(isbnclean)
@@ -37,7 +44,7 @@ for line in isbns:
     
     try:
         newprice=soup.LowestNewPrice.Amount.string
-        print 'new price type ', type(newprice), ' Value ', newprice
+#        print 'new price type ', type(newprice), ' Value ', newprice
     except AttributeError:
         newprice=0
     try:
@@ -63,10 +70,10 @@ for line in isbns:
     AmznIds = open('amznids.txt', 'a')
     if os.stat(directories.datafiledir+'%s.txt' % itmisbn).st_size==0:
         outfile.write('{0} {1} {2} {3} {4} {5}\n'.format('Time:', 'ISBN:', 'Retail-Price:', 'Lowest-New-Price:', 'Lowest-Used-Price:','Sales-Rank'))
-        outfile.write('{0} {1} {2} {3} {4} {5}\n'.format(time, itmisbn, retailprice,newprice,usedprice,salesrank))
+        outfile.write('{0} {1} {2} {3} {4} {5}\n'.format(CallTime, itmisbn, retailprice,newprice,usedprice,salesrank))
         outfile.close()
     else:
-        outfile.write('{0} {1} {2} {3} {4} {5}\n'.format(time, itmisbn, retailprice,newprice,usedprice,salesrank))
+        outfile.write('{0} {1} {2} {3} {4} {5}\n'.format(CallTime, itmisbn, retailprice,newprice,usedprice,salesrank))
         outfile.close()
     ##If new items have been added to isbns.txt, delete all entries from amznids.txt and then
     ##include the following two lines.   

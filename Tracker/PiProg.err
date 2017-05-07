@@ -1,4 +1,8 @@
 Traceback (most recent call last):
-  File "/home/pi/Documents/AmazonTracker/Tracker/PiProg.py", line 50, in <module>
-    itmisbn = soup.find('ASIN').contents[-1].strip()
-AttributeError: 'NoneType' object has no attribute 'contents'
+  File "/home/pi/Documents/AmazonTracker/Tracker/PiProg.py", line 36, in <module>
+    response = amazon.ItemLookup(ItemId=isbnclean, ResponseGroup="Large")
+  File "build/bdist.linux-armv7l/egg/bottlenose/api.py", line 265, in __call__
+  File "build/bdist.linux-armv7l/egg/bottlenose/api.py", line 234, in _call_api
+  File "/home/pi/Documents/AmazonTracker/Tracker/PiProg.py", line 22, in error_handler
+    time.sleep(random.expovariate(0.1))
+AttributeError: 'str' object has no attribute 'sleep'
