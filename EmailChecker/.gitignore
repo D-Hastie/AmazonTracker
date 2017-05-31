@@ -1,7 +1,7 @@
 *.pyc
 *ids.py
 *.swp
-*mailconf.py
+*Mailconf.py
 ProductData.txt
 isbns.txt
 isbns.hold
