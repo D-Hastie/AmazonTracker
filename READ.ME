@@ -1,0 +1,11 @@
+This is a work in progress. 
+The main program will track items from a file using the Amazon Identification (ASIN) or other (ISBN, EAN, UPC) if specified within the BottleNose call. 
+I have yet to produce a good method of call lookups from a list that use any of the ID methods.
+
+The email checker is fairly new and least worked on part. It works by retrieving the latest CSV attachment in an email address, using GMail API. 
+The bulk of the email code was found in a stack overflow answer https://stackoverflow.com/a/27556667/5772968.
+
+The email checker varies from the tracker by using a found price and ID number and matching it to the current amazon listing.
+
+ 
+
